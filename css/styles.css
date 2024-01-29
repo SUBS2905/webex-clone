@@ -1,0 +1,117 @@
+@import "./shared-styles.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.secondary-nav {
+  background-color: #191919;
+  color: #fff;
+  height: 7vh;
+  padding: 0 0.5rem;
+}
+.user-info-search {
+  width: 90%;
+}
+.search-wrapper {
+  width: 20%;
+  background-color: #323232;
+  border-radius: 2rem;
+  overflow: hidden;
+  padding: 0.25rem 0.5rem;
+}
+.search-wrapper input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+main {
+  height: 93vh;
+  background-color: #252525;
+}
+.primary-nav {
+  width: 15%;
+  background-color: #150f96;
+  color: #fff;
+  padding: 1rem 0.5rem;
+  font-size: 0.8rem;
+}
+.nav-items {
+  padding: 0.5rem 1rem;
+  border-radius: 80px/100px;
+}
+.nav-items:hover {
+  cursor: pointer;
+  background-color: #443fab;
+}
+.nav-items > .feather {
+  width: 1rem;
+}
+.meeting-details {
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+}
+.meet-info p {
+  font-size: 0.7rem;
+}
+.feather-copy {
+  width: 0.75rem;
+}
+.meet-icons {
+  padding: 1rem 20rem;
+}
+.icon-wrapper {
+  background-color: #1d805f;
+  padding: 0.75rem;
+  border-radius: 100%;
+}
+#schedule-meet {
+  background-color: transparent;
+  border: 1px solid white;
+}
+.meet-item p {
+  font-size: 0.8rem;
+}
+.calendar-nav {
+  background-color: #303030;
+  padding: 0.5rem 1rem;
+  border-radius: 80px/100px;
+}
+.calendar-nav > div > p:nth-child(1) {
+  padding: 0.1rem 0.4rem;
+  background-color: #595959;
+  border-radius: 80px/100px;
+}
+.date-picker > div:nth-child(1) {
+  padding: 0.1rem 0.4rem;
+  border: 1px solid #fff;
+  border-radius: 80px/100px;
+}
+
+.date-picker > div:nth-child(2) p {
+  padding: 0.1rem 0.4rem;
+  border: 1px solid #fff;
+  border-radius: 80px/100px;
+}
+.date-picker > div:nth-child(3) {
+  width: 5rem;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid #fff;
+  border-radius: 80px/100px;
+}
+
+.meetings {
+  overflow-y: scroll;
+  margin-top: 1rem;
+}
+.meeting-wrapper {
+  padding: 0.5rem;
+  background-color: #303030;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.meet-timings p {
+  font-size: 0.8rem;
+}

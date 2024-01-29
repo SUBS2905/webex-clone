@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script defer src="js/index.js"></script>
+    <title>Webex-Clone</title>
+  </head>
+  <body class="flex flex-col">
+    <header>
+      <nav class="secondary-nav flex items-center justify-between">
+        <div class="user-info-search flex flex-row gap-2 items-center">
+          <i data-feather="user"></i>
+          <i data-feather="plus-circle"></i>
+          <div class="search-wrapper flex gap-2 items-center">
+            <i data-feather="search"></i>
+            <input type="text" placeholder="Search, meet, and call" />
+          </div>
+        </div>
+        <i data-feather="wifi"></i>
+      </nav>
+    </header>
+    <main class="flex flex-row">
+      <nav class="primary-nav flex flex-col justify-between">
+        <div class="upper flex flex-col gap-4">
+          <div class="nav-items flex flex-row items-center gap-3">
+            <i data-feather="book"></i>
+            <p>Contacts</p>
+          </div>
+          <div class="nav-items flex flex-row items-center gap-3">
+            <i data-feather="phone"></i>
+            <p>Calling</p>
+          </div>
+          <div class="nav-items flex flex-row items-center gap-3">
+            <i data-feather="calendar"></i>
+            <p>Meetings</p>
+          </div>
+          <div class="nav-items flex flex-row items-center gap-3">
+            <i data-feather="activity"></i>
+            <p>Personal insights</p>
+          </div>
+          <div class="nav-items flex flex-row items-center gap-3">
+            <i data-feather="repeat"></i>
+            <p>Update ready</p>
+          </div>
+        </div>
+        <div class="lower flex flex-col gap-4">
+          <div class="nav-items flex flex-row items-center gap-3">
+            <i data-feather="settings"></i>
+            <p>Settings</p>
+          </div>
+          <div class="nav-items flex flex-row items-center gap-3">
+            <i data-feather="help-circle"></i>
+            <p>Help</p>
+          </div>
+        </div>
+      </nav>
+      <section class="meeting-details flex flex-col">
+        <section class="meet-info flex flex-col gap-2">
+          <h3>Meetings</h3>
+          <div class="meeting-link flex flex-row items-center gap-4">
+            <p>https://cb.webex.com/meet/johndoe</p>
+            <i data-feather="copy"></i>
+          </div>
+        </section>
+        <section class="meet-icons flex flex-row items-center justify-around">
+          <div
+            class="meet-item flex flex-col justify-center items-center gap-1"
+          >
+            <div class="icon-wrapper flex items-center justify-center">
+              <i data-feather="video"></i>
+            </div>
+            <p>Start a Personal Room</p>
+            <p>meeting</p>
+          </div>
+          <div
+            class="meet-item flex flex-col justify-center items-center gap-1"
+          >
+            <div class="icon-wrapper flex items-center justify-center">
+              <i data-feather="log-in"></i>
+            </div>
+            <p>Join a meeting</p>
+            <br />
+          </div>
+          <div
+            class="meet-item flex flex-col justify-center items-center gap-1"
+          >
+            <div
+              id="schedule-meet"
+              class="icon-wrapper flex items-center justify-center"
+            >
+              <i data-feather="plus-square"></i>
+            </div>
+            <p>Schedule a meeting</p>
+            <br />
+          </div>
+        </section>
+        <section class="calendar-nav flex justify-between items-center">
+          <div class="flex items-center justify-start gap-4">
+            <p>Calendar</p>
+            <p>Meeting recap</p>
+          </div>
+          <div class="date-picker flex items-center justify-end gap-4">
+            <div class="flex items-center gap-2">
+              <p>&lt;</p>
+              <p>Fri, 1/26/2024</p>
+              <p>&gt;</p>
+            </div>
+            <div>
+              <p>Today</p>
+            </div>
+            <div class="flex justify-between">
+              <p>List</p>
+              <p>&#9660;</p>
+            </div>
+          </div>
+        </section>
+        <section class="meetings flex flex-col gap-3">
+          <h5>Tuesday, January 23, 2024</h5>
+          <div class="meeting-wrapper flex justify-start items-center gap-2">
+            <div class="meet-icon-wrapper">
+              <i data-feather="smile"></i>
+            </div>
+            <div class="meet-timings flex flex-col gap-1">
+              <p>API Studio Daily Standup</p>
+              <p>7.30 PM - 8.00PM</p>
+            </div>
+          </div>
+          <div class="meeting-wrapper flex justify-start items-center gap-2">
+            <div class="meet-icon-wrapper">
+              <i data-feather="smartphone"></i>
+            </div>
+            <div class="meet-timings flex flex-col gap-1">
+              <p>[Office Hours] API Connect</p>
+              <p>8.00 PM - 9.00PM</p>
+            </div>
+          </div>
+          <h5>Wednesday, January 24, 2024</h5>
+          <div class="meeting-wrapper flex justify-start items-center gap-2">
+            <div class="meet-icon-wrapper">
+              <i data-feather="smile"></i>
+            </div>
+            <div class="meet-timings flex flex-col gap-1">
+              <p>API Studio Daily Standup</p>
+              <p>7.30 PM - 8.00PM</p>
+            </div>
+          </div>
+          <div class="meeting-wrapper flex justify-start items-center gap-2">
+            <div class="meet-icon-wrapper">
+              <i data-feather="smile"></i>
+            </div>
+            <div class="meet-timings flex flex-col gap-1">
+              <p>API Studio Daily Standup</p>
+              <p>7.30 PM - 8.00PM</p>
+            </div>
+          </div>
+          <div class="meeting-wrapper flex justify-start items-center gap-2">
+            <div class="meet-icon-wrapper">
+              <i data-feather="smartphone"></i>
+            </div>
+            <div class="meet-timings flex flex-col gap-1">
+              <p>[Office Hours] API Connect</p>
+              <p>8.00 PM - 9.00PM</p>
+            </div>
+          </div>
+          <div class="meeting-wrapper flex justify-start items-center gap-2">
+            <div class="meet-icon-wrapper">
+              <i data-feather="smile"></i>
+            </div>
+            <div class="meet-timings flex flex-col gap-1">
+              <p>API Studio Daily Standup</p>
+              <p>7.30 PM - 8.00PM</p>
+            </div>
+          </div>
+          <div class="meeting-wrapper flex justify-start items-center gap-2">
+            <div class="meet-icon-wrapper">
+              <i data-feather="smartphone"></i>
+            </div>
+            <div class="meet-timings flex flex-col gap-1">
+              <p>[Office Hours] API Connect</p>
+              <p>8.00 PM - 9.00PM</p>
+            </div>
+          </div>
+          <div class="meeting-wrapper flex justify-start items-center gap-2">
+            <div class="meet-icon-wrapper">
+              <i data-feather="smartphone"></i>
+            </div>
+            <div class="meet-timings flex flex-col gap-1">
+              <p>[Office Hours] API Connect</p>
+              <p>8.00 PM - 9.00PM</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
